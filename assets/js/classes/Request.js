@@ -10,4 +10,14 @@ export default class Request {
             body: JSON.stringify(user)
         })
     }
+    static register(user) {
+        return fetch(`${BASE_URL}/users`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+    }
 }

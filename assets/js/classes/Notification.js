@@ -18,6 +18,7 @@ export default class Notification {
         const notification = document.querySelector('.notification');
         setTimeout(() => {
             notification.classList.remove('visible');
+            notification.classList.remove(this.type);
         }, this.delay)
     }
     appendNotification() {

@@ -16,21 +16,14 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6">
-                <div class="alert alert-warning">
-                    <div class="alert-body">
-                        <h6>Test data</h6>
-                        <p class="m-0">
-                            <b>user:</b> erik6@academlo.com <br>
-                            <b>password:</b> secret
-                        </p>
-                    </div>
-                </div>
                 <div class="text-center">
                     <img src="../assets/img/academlo_logo.png" alt="" width="200px" class="mb-3">
                 </div>
                 <div class="card card-matter">
                     <div class="card-body">
-                        <form action="/login" id="login-form">
+                        <h4>Create an account</h4>
+                        <hr>
+                        <form action="/login" id="register-form">
                             <div class="form-group">
                               <label for="email">Email</label>
                               <input type="email" class="form-control" id="email" placeholder="Enter email" required>
@@ -40,9 +33,9 @@
                               <input type="password" class="form-control" id="password" placeholder="Password" required>
                             </div>
                             <div class="text-center mb-3">
-                                <a href="/auth/register.html" class="text-decoration-none">Create an account</a>
+                                Have an account? <a href="/auth/login.html" class="text-decoration-none">Log In</a>
                             </div>
-                            <button id="login-button" type="submit" class="btn btn-block rounded-pill btn-primary-blue">Iniciar sesión</button>
+                            <button id="login-button" type="submit" class="btn btn-block rounded-pill btn-primary-blue">Create an account</button>
                         </form>
                     </div>
                 </div>
