@@ -11,7 +11,7 @@ export default class Auth {
                 this.handleLoginResponse(response.status)
                 return response.json();
             })
-        .then(result => console.log(result))
+            .then(result => localStorage.setItem('user', JSON.stringify(result)));
     }
     static handleLoginResponse(statusCode) {
         if(statusCode === 200) {
@@ -43,5 +43,8 @@ export default class Auth {
     }
     static getLoginbutton() {
         return document.getElementById('login-button');
+    }
+    static user() {
+        return JSON.parse(localStorage.getItem('user'));
     }
 }
